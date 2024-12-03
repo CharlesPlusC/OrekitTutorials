@@ -1,0 +1,678 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000000013001b2cc, pid=38950, tid=0x0000000000004d4f
+#
+# JRE version: OpenJDK Runtime Environment (Zulu 8.78.0.19-CA-macos-aarch64) (8.0_412-b08) (build 1.8.0_412-b08)
+# Java VM: OpenJDK 64-Bit Server VM (25.412-b08 mixed mode bsd-aarch64 compressed oops)
+# Problematic frame:
+# C  [_orekit.cpython-311-darwin.so+0x1b2cc]  JCCEnv::callObjectMethod(_jobject*, _jmethodID*, ...) const+0x48
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://www.azul.com/support/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 2 (SEGV_ACCERR), si_addr: 0x0000000000000000
+
+Registers:
+ x0=0x0000000000000000  x1=0x0000000157961320  x2=0x0000000125f395c8  x3=0x000000031d006960
+ x4=0x0000000000000000  x5=0x0000000000000010  x6=0x000000000000003e  x7=0x000000031d006758
+ x8=0x000000031d0070e0  x9=0x0000000000000bac x10=0x0000000000000bad x11=0x0000000000000000
+x12=0x0000000000000021 x13=0x0000000102f7cf00 x14=0x000000031bf3abc8 x15=0x0000000102e508ec
+x16=0x0000000188438da4 x17=0x000000031d007000 x18=0x0000000000000000 x19=0x0000000125f395c8
+x20=0x0000000157961320 x21=0x0000000125e65fe0 x22=0x000000010300d750 x23=0x0000000000000000
+x24=0x00000001039ec6f8 x25=0x0000000102c5cc14 x26=0x00000001368b7e1e x27=0x0000000000000000
+x28=0x00000001039ec700  fp=0x000000031d006950  lr=0x000000013001b2c8  sp=0x000000031d006920
+pc=0x000000013001b2cc cpsr=0x0000000020001000
+Top of Stack: (sp=0x000000031d006920)
+0x000000031d006920:   000000031d006960 c9f4d4ee87420057
+0x000000031d006930:   000000010300d750 0000000102fff000
+0x000000031d006940:   00000001550aedc0 000000031a58cfc0
+0x000000031d006950:   000000031d006990 000000013001f9a4
+0x000000031d006960:   0000000102ec45ed c9f4d4ee87420057
+0x000000031d006970:   000000010300d750 0000000102fff000
+0x000000031d006980:   00000001550aedc0 000000031a58cfc0
+0x000000031d006990:   000000031d0069d0 0000000102c44afc
+0x000000031d0069a0:   0000000000000000 000000031d007000
+0x000000031d0069b0:   000000031b4f6c08 0000000000000000
+0x000000031d0069c0:   000000031a58cfc0 0000000102f86680
+0x000000031d0069d0:   000000031d006a70 0000000102c716ac
+0x000000031d0069e0:   000000031d006a70 0000000102c2d0ac
+0x000000031d0069f0:   0000000102fff000 000000020300fab0
+0x000000031d006a00:   000000031d006a90 65458d5e0fd83247
+0x000000031d006a10:   0000000106795700 0000000135ffa650
+0x000000031d006a20:   00000001039ec6f8 c9f4d4ee87420057
+0x000000031d006a30:   00000001368b7e1e 0000000102c5cc14
+0x000000031d006a40:   00000001039ec6f8 00000001550aedc0
+0x000000031d006a50:   0000000000000000 000000031b4f6bf0
+0x000000031d006a60:   0000000102f86680 00000001550aedc0
+0x000000031d006a70:   000000031d006ac0 0000000102c5cc68
+0x000000031d006a80:   0000000102f93e50 0000000000000001
+0x000000031d006a90:   00000001039ec6f8 0000000000000000
+0x000000031d006aa0:   000000031b4f6bf0 0000000000000000
+0x000000031d006ab0:   0000000102f86680 00000001550aedc0
+0x000000031d006ac0:   000000031d006b20 0000000102be86f0
+0x000000031d006ad0:   00000001039ec6e8 00000001039ec6e8
+0x000000031d006ae0:   00000001368b7e1e 00000001368b7e1c
+0x000000031d006af0:   0000000000000001 0000000000000000
+0x000000031d006b00:   00000001039ec5a0 0000000000000001
+0x000000031d006b10:   0000000102f86680 00000001039ec6f8 
+
+Instructions: (pc=0x000000013001b2cc)
+0x000000013001b2ac:   f9400108 f90007e8 910043a8 f90003e8
+0x000000013001b2bc:   900120e8 f9467900 94735126 f94003e3
+0x000000013001b2cc:   f9400008 f9408d08 aa1403e1 aa1303e2
+0x000000013001b2dc:   d63f0100 aa0003f3 aa1503e0 940000ad 
+
+Register to memory mapping:
+
+ x0=0x0000000000000000 is an unknown value
+ x1=0x0000000157961320 is a global jni handle
+ x2=0x0000000125f395c8 is an unknown value
+ x3=0x000000031d006960 is an unknown value
+ x4=0x0000000000000000 is an unknown value
+ x5=0x0000000000000010 is an unknown value
+ x6=0x000000000000003e is an unknown value
+ x7=0x000000031d006758 is an unknown value
+ x8=0x000000031d0070e0 is an unknown value
+ x9=0x0000000000000bac is an unknown value
+x10=0x0000000000000bad is an unknown value
+x11=0x0000000000000000 is an unknown value
+x12=0x0000000000000021 is an unknown value
+x13=0x0000000102f7cf00: PyTuple_Type+0 in /Users/charlesc/anaconda3/envs/orekit_tutorials_env/bin/python3.11 at 0x0000000102b88000
+x14=0x000000031bf3abc8 is an unknown value
+x15=0x0000000102e508ec: <offset 0x2c88ec> in /Users/charlesc/anaconda3/envs/orekit_tutorials_env/bin/python3.11 at 0x0000000102b88000
+x16=0x0000000188438da4: pthread_getspecific+0 in /usr/lib/system/libsystem_pthread.dylib at 0x0000000188437000
+x17=0x000000031d007000 is an unknown value
+x18=0x0000000000000000 is an unknown value
+x19=0x0000000125f395c8 is an unknown value
+x20=0x0000000157961320 is a global jni handle
+x21=0x0000000125e65fe0 is an unknown value
+x22=0x000000010300d750: _PyRuntime+0xe670 in /Users/charlesc/anaconda3/envs/orekit_tutorials_env/bin/python3.11 at 0x0000000102b88000
+x23=0x0000000000000000 is an unknown value
+x24=0x00000001039ec6f8 is an unknown value
+x25=0x0000000102c5cc14: type_call+0 in /Users/charlesc/anaconda3/envs/orekit_tutorials_env/bin/python3.11 at 0x0000000102b88000
+x26=0x00000001368b7e1e is an unknown value
+x27=0x0000000000000000 is an unknown value
+x28=0x00000001039ec700 is an unknown value
+
+
+Stack: [0x000000031c004000,0x000000031d007000],  sp=0x000000031d006920,  free space=16394k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [_orekit.cpython-311-darwin.so+0x1b2cc]  JCCEnv::callObjectMethod(_jobject*, _jmethodID*, ...) const+0x48
+C  [_orekit.cpython-311-darwin.so+0x1f9a4]  JCCEnv::toPyUnicode(_jobject*) const+0x34
+C  [python3.11+0xbcafc]  PyObject_Str+0x168
+C  [python3.11+0xe96ac]  unicode_new+0x184
+C  [python3.11+0xd4c68]  type_call+0x54
+C  [python3.11+0x606f0]  _PyObject_MakeTpCall+0x14c
+C  [python3.11+0x162e3c]  _PyEval_EvalFrameDefault+0xb594
+C  [python3.11+0x1674c8]  _PyEval_Vector+0xb8
+C  [python3.11+0x164dac]  _PyEval_EvalFrameDefault+0xd504
+C  [python3.11+0x1674c8]  _PyEval_Vector+0xb8
+C  [python3.11+0x64244]  method_vectorcall+0x158
+C  [python3.11+0x248f00]  thread_run+0x108
+C  [python3.11+0x1d15bc]  pythread_wrapper+0x30
+C  [libsystem_pthread.dylib+0x6f94]  _pthread_start+0x88
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000005c0000000, size: 8192 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000800000000, Narrow klass shift: 0
+Compressed class space size: 1073741824 Address: 0x0000000800000000
+
+Heap:
+ PSYoungGen      total 287744K, used 127589K [0x0000000715580000, 0x0000000729080000, 0x00000007c0000000)
+  eden space 254976K, 43% used [0x0000000715580000,0x000000071c299668,0x0000000724e80000)
+  from space 32768K, 48% used [0x0000000727080000,0x0000000727fffe88,0x0000000729080000)
+  to   space 33792K, 0% used [0x0000000724e80000,0x0000000724e80000,0x0000000726f80000)
+ ParOldGen       total 349696K, used 21521K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 6% used [0x00000005c0000000,0x00000005c1504488,0x00000005d5580000)
+ Metaspace       used 19594K, capacity 20657K, committed 20864K, reserved 1067008K
+  class space    used 2815K, capacity 3377K, committed 3456K, reserved 1048576K
+
+Card table byte_map: [0x0000000146800000,0x0000000147804000] byte_map_base: 0x0000000143a00000
+
+Marking Bits: (ParMarkBitMap*) 0x00000001156b61a8
+ Begin Bits: [0x0000000300000000, 0x0000000308000000)
+ End Bits:   [0x0000000308000000, 0x0000000310000000)
+
+Polling page: 0x00000001034c4000
+
+CodeCache: size=131072Kb used=8812Kb max_used=8855Kb free=122260Kb
+ bounds [0x000000017557c000, 0x0000000175e4c000, 0x000000017d57c000]
+ total_blobs=3100 nmethods=2534 adapters=482
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 1144.351 Thread 0x000000014621e800 nmethod 3272 0x0000000175729450 code [0x0000000175729580, 0x00000001757296d0]
+Event: 1144.355 Thread 0x000000013697c800 nmethod 3271% 0x0000000175e1f510 code [0x0000000175e1f6c0, 0x0000000175e1fc68]
+Event: 1195.440 Thread 0x0000000126854000 3273       3       org.orekit.forces.gravity.potential.TimeDependentHarmonic::<init> (95 bytes)
+Event: 1195.440 Thread 0x0000000126854000 nmethod 3273 0x000000017599e110 code [0x000000017599e2c0, 0x000000017599ead0]
+Event: 1195.440 Thread 0x0000000126854000 3274       3       sun.misc.FDBigInteger::size (10 bytes)
+Event: 1195.440 Thread 0x0000000126854000 nmethod 3274 0x00000001759d9dd0 code [0x00000001759d9f40, 0x00000001759da050]
+Event: 1233.062 Thread 0x0000000136173800 3275       4       java.text.DecimalFormat::subformat (1238 bytes)
+Event: 1233.062 Thread 0x0000000126854000 3276       3       java.text.DigitList::isZero (31 bytes)
+Event: 1233.063 Thread 0x0000000126854000 nmethod 3276 0x0000000175a29490 code [0x0000000175a29600, 0x0000000175a29810]
+Event: 1233.123 Thread 0x0000000136173800 nmethod 3275 0x0000000175e3a310 code [0x0000000175e3a840, 0x0000000175e42a58]
+
+GC Heap History (10 events):
+Event: 569.352 GC heap before
+{Heap before GC invocations=4 (full 0):
+ PSYoungGen      total 153088K, used 151402K [0x0000000715580000, 0x0000000720000000, 0x00000007c0000000)
+  eden space 131584K, 100% used [0x0000000715580000,0x000000071d600000,0x000000071d600000)
+  from space 21504K, 92% used [0x000000071d600000,0x000000071e95a9a0,0x000000071eb00000)
+  to   space 21504K, 0% used [0x000000071eb00000,0x000000071eb00000,0x0000000720000000)
+ ParOldGen       total 349696K, used 40K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 0% used [0x00000005c0000000,0x00000005c000a000,0x00000005d5580000)
+ Metaspace       used 19289K, capacity 20381K, committed 20608K, reserved 1067008K
+  class space    used 2813K, capacity 3377K, committed 3456K, reserved 1048576K
+Event: 569.368 GC heap after
+Heap after GC invocations=4 (full 0):
+ PSYoungGen      total 153088K, used 21503K [0x0000000715580000, 0x0000000720000000, 0x00000007c0000000)
+  eden space 131584K, 0% used [0x0000000715580000,0x0000000715580000,0x000000071d600000)
+  from space 21504K, 99% used [0x000000071eb00000,0x000000071fffffd0,0x0000000720000000)
+  to   space 21504K, 0% used [0x000000071d600000,0x000000071d600000,0x000000071eb00000)
+ ParOldGen       total 349696K, used 3973K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 1% used [0x00000005c0000000,0x00000005c03e14b0,0x00000005d5580000)
+ Metaspace       used 19289K, capacity 20381K, committed 20608K, reserved 1067008K
+  class space    used 2813K, capacity 3377K, committed 3456K, reserved 1048576K
+}
+Event: 612.349 GC heap before
+{Heap before GC invocations=5 (full 0):
+ PSYoungGen      total 153088K, used 153087K [0x0000000715580000, 0x0000000720000000, 0x00000007c0000000)
+  eden space 131584K, 100% used [0x0000000715580000,0x000000071d600000,0x000000071d600000)
+  from space 21504K, 99% used [0x000000071eb00000,0x000000071fffffd0,0x0000000720000000)
+  to   space 21504K, 0% used [0x000000071d600000,0x000000071d600000,0x000000071eb00000)
+ ParOldGen       total 349696K, used 3973K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 1% used [0x00000005c0000000,0x00000005c03e14b0,0x00000005d5580000)
+ Metaspace       used 19375K, capacity 20525K, committed 20608K, reserved 1067008K
+  class space    used 2813K, capacity 3377K, committed 3456K, reserved 1048576K
+Event: 612.366 GC heap after
+Heap after GC invocations=5 (full 0):
+ PSYoungGen      total 150016K, used 21488K [0x0000000715580000, 0x0000000721900000, 0x00000007c0000000)
+  eden space 128512K, 0% used [0x0000000715580000,0x0000000715580000,0x000000071d300000)
+  from space 21504K, 99% used [0x000000071d600000,0x000000071eafc010,0x000000071eb00000)
+  to   space 35840K, 0% used [0x000000071f600000,0x000000071f600000,0x0000000721900000)
+ ParOldGen       total 349696K, used 11997K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 3% used [0x00000005c0000000,0x00000005c0bb74b0,0x00000005d5580000)
+ Metaspace       used 19375K, capacity 20525K, committed 20608K, reserved 1067008K
+  class space    used 2813K, capacity 3377K, committed 3456K, reserved 1048576K
+}
+Event: 612.554 GC heap before
+{Heap before GC invocations=6 (full 0):
+ PSYoungGen      total 150016K, used 150000K [0x0000000715580000, 0x0000000721900000, 0x00000007c0000000)
+  eden space 128512K, 100% used [0x0000000715580000,0x000000071d300000,0x000000071d300000)
+  from space 21504K, 99% used [0x000000071d600000,0x000000071eafc010,0x000000071eb00000)
+  to   space 35840K, 0% used [0x000000071f600000,0x000000071f600000,0x0000000721900000)
+ ParOldGen       total 349696K, used 11997K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 3% used [0x00000005c0000000,0x00000005c0bb74b0,0x00000005d5580000)
+ Metaspace       used 19479K, capacity 20525K, committed 20608K, reserved 1067008K
+  class space    used 2813K, capacity 3377K, committed 3456K, reserved 1048576K
+Event: 612.564 GC heap after
+Heap after GC invocations=6 (full 0):
+ PSYoungGen      total 163328K, used 25151K [0x0000000715580000, 0x0000000729880000, 0x00000007c0000000)
+  eden space 127488K, 0% used [0x0000000715580000,0x0000000715580000,0x000000071d200000)
+  from space 35840K, 70% used [0x000000071f600000,0x0000000720e8fff0,0x0000000721900000)
+  to   space 36864K, 0% used [0x000000071d200000,0x000000071d200000,0x000000071f600000)
+ ParOldGen       total 349696K, used 12005K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 3% used [0x00000005c0000000,0x00000005c0bb94b0,0x00000005d5580000)
+ Metaspace       used 19479K, capacity 20525K, committed 20608K, reserved 1067008K
+  class space    used 2813K, capacity 3377K, committed 3456K, reserved 1048576K
+}
+Event: 1026.407 GC heap before
+{Heap before GC invocations=7 (full 0):
+ PSYoungGen      total 163328K, used 152639K [0x0000000715580000, 0x0000000729880000, 0x00000007c0000000)
+  eden space 127488K, 100% used [0x0000000715580000,0x000000071d200000,0x000000071d200000)
+  from space 35840K, 70% used [0x000000071f600000,0x0000000720e8fff0,0x0000000721900000)
+  to   space 36864K, 0% used [0x000000071d200000,0x000000071d200000,0x000000071f600000)
+ ParOldGen       total 349696K, used 12005K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 3% used [0x00000005c0000000,0x00000005c0bb94b0,0x00000005d5580000)
+ Metaspace       used 19580K, capacity 20657K, committed 20864K, reserved 1067008K
+  class space    used 2815K, capacity 3377K, committed 3456K, reserved 1048576K
+Event: 1026.420 GC heap after
+Heap after GC invocations=7 (full 0):
+ PSYoungGen      total 164352K, used 18987K [0x0000000715580000, 0x0000000729280000, 0x00000007c0000000)
+  eden space 127488K, 0% used [0x0000000715580000,0x0000000715580000,0x000000071d200000)
+  from space 36864K, 51% used [0x000000071d200000,0x000000071e48ad08,0x000000071f600000)
+  to   space 34816K, 0% used [0x0000000727080000,0x0000000727080000,0x0000000729280000)
+ ParOldGen       total 349696K, used 18793K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 5% used [0x00000005c0000000,0x00000005c125a618,0x00000005d5580000)
+ Metaspace       used 19580K, capacity 20657K, committed 20864K, reserved 1067008K
+  class space    used 2815K, capacity 3377K, committed 3456K, reserved 1048576K
+}
+Event: 1026.599 GC heap before
+{Heap before GC invocations=8 (full 0):
+ PSYoungGen      total 164352K, used 146475K [0x0000000715580000, 0x0000000729280000, 0x00000007c0000000)
+  eden space 127488K, 100% used [0x0000000715580000,0x000000071d200000,0x000000071d200000)
+  from space 36864K, 51% used [0x000000071d200000,0x000000071e48ad08,0x000000071f600000)
+  to   space 34816K, 0% used [0x0000000727080000,0x0000000727080000,0x0000000729280000)
+ ParOldGen       total 349696K, used 18793K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 5% used [0x00000005c0000000,0x00000005c125a618,0x00000005d5580000)
+ Metaspace       used 19589K, capacity 20657K, committed 20864K, reserved 1067008K
+  class space    used 2815K, capacity 3377K, committed 3456K, reserved 1048576K
+Event: 1026.609 GC heap after
+Heap after GC invocations=8 (full 0):
+ PSYoungGen      total 287744K, used 15871K [0x0000000715580000, 0x0000000729080000, 0x00000007c0000000)
+  eden space 254976K, 0% used [0x0000000715580000,0x0000000715580000,0x0000000724e80000)
+  from space 32768K, 48% used [0x0000000727080000,0x0000000727fffe88,0x0000000729080000)
+  to   space 33792K, 0% used [0x0000000724e80000,0x0000000724e80000,0x0000000726f80000)
+ ParOldGen       total 349696K, used 21521K [0x00000005c0000000, 0x00000005d5580000, 0x0000000715580000)
+  object space 349696K, 6% used [0x00000005c0000000,0x00000005c1504488,0x00000005d5580000)
+ Metaspace       used 19589K, capacity 20657K, committed 20864K, reserved 1067008K
+  class space    used 2815K, capacity 3377K, committed 3456K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 1026.567 Thread 0x00000001461ef800 Uncommon trap: reason=unloaded action=reinterpret pc=0x00000001759a2870 method=org.hipparchus.ode.nonstiff.ExplicitRungeKuttaIntegrator.applyExternalButcherWeights([D[[DD[D)[D @ 1
+Event: 1144.349 Thread 0x00000001461ef800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000175a1997c method=org.hipparchus.util.FastMath.round(D)J @ 46
+Event: 1144.349 Thread 0x00000001461ef800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000175c76020 method=org.orekit.utils.GenericTimeStampedCache.selectSlot(Lorg/orekit/time/AbsoluteDate;J)Lorg/orekit/utils/GenericTimeStampedCache$Slot; @ 62
+Event: 1144.349 Thread 0x00000001461ef800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000175c6744c method=org.hipparchus.util.FastMath.round(D)J @ 46
+Event: 1144.349 Thread 0x00000001461ef800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000175a610f8 method=org.orekit.utils.GenericTimeStampedCache$Slot.getNeighbors(Lorg/orekit/time/AbsoluteDate;JI)Ljava/util/stream/Stream; @ 222
+Event: 1144.350 Thread 0x00000001461ef800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000175a610f8 method=org.orekit.utils.GenericTimeStampedCache$Slot.getNeighbors(Lorg/orekit/time/AbsoluteDate;JI)Ljava/util/stream/Stream; @ 222
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000175bc1c4c method=org.orekit.utils.GenericTimeStampedCache.slotIndex(J)I @ 56
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000001759f3430 method=sun.misc.FloatingDecimal$BinaryToASCIIBuffer.estimateDecExp(JI)I @ 66
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000175e20900 method=java.text.DigitList.set(ZLjava/lang/String;ZZIZ)V @ 97
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: reason=loop_limit_check action=maybe_recompile pc=0x0000000175d4e8cc method=java.text.DecimalFormat.subformat(Ljava/lang/StringBuffer;Ljava/text/Format$FieldDelegate;ZZIIII)Ljava/lang/StringBuffer; @ 805
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.096 Thread 0x00000001461ef800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x0000000715b2db48) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/27961/zulu-src.git/hotspot/src/share/vm/prims/methodHandles.cpp, line 1194]
+Event: 0.127 Thread 0x00000001461ef800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000715d71af0) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/27961/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.127 Thread 0x00000001461ef800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000715d71ee8) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/27961/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.127 Thread 0x00000001461ef800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000715d75748) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/27961/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.127 Thread 0x00000001461ef800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000715d75b40) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/27961/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 560.689 Thread 0x00000001461ef800 Implicit null exception at 0x00000001759472a0 to 0x0000000175947530
+Event: 560.690 Thread 0x00000001461ef800 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$comparing$77a9974f$1(Ljava/util/function/Function;Ljava/lang/Object;Ljava/lang/Object;)I> (0x0000000718e04120) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/279
+Event: 567.540 Thread 0x00000001461ef800 Implicit null exception at 0x00000001759c4144 to 0x00000001759c6488
+Event: 568.386 Thread 0x00000001461ef800 Exception <a 'java/lang/IncompatibleClassChangeError': Found class java.lang.Object, but interface was expected> (0x0000000718324860) thrown at [/Users/tester/jenkins/blue/workspace/Zulu/zulu-platform-build/27961/zulu-src.git/hotspot/src/share/vm/interpre
+Event: 612.462 Thread 0x00000001461ef800 Implicit null exception at 0x0000000175ae2b2c to 0x0000000175ae3320
+
+Events (10 events):
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x00000001759f3430
+Event: 1144.352 Thread 0x00000001461ef800 DEOPT PACKING pc=0x00000001759f3430 sp=0x000000016d274070
+Event: 1144.352 Thread 0x00000001461ef800 DEOPT UNPACKING pc=0x00000001755b56d4 sp=0x000000016d273e70 mode 2
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x0000000175e20900
+Event: 1144.352 Thread 0x00000001461ef800 DEOPT PACKING pc=0x0000000175e20900 sp=0x000000016d274140
+Event: 1144.352 Thread 0x00000001461ef800 DEOPT UNPACKING pc=0x00000001755b56d4 sp=0x000000016d2740a0 mode 2
+Event: 1144.352 Thread 0x00000001461ef800 Uncommon trap: trap_request=0xffffff7e fr.pc=0x0000000175d4e8cc
+Event: 1144.352 Thread 0x00000001461ef800 DEOPT PACKING pc=0x0000000175d4e8cc sp=0x000000016d274180
+Event: 1144.352 Thread 0x00000001461ef800 DEOPT UNPACKING pc=0x00000001755b56d4 sp=0x000000016d2740c0 mode 2
+Event: 1144.355 Thread 0x000000013697c800 flushing nmethod 0x00000001759d9dd0
+
+
+Dynamic libraries:
+0x00000001950c1000 	/usr/lib/libSystem.B.dylib
+0x00000001950bb000 	/usr/lib/system/libcache.dylib
+0x0000000195075000 	/usr/lib/system/libcommonCrypto.dylib
+0x00000001950a1000 	/usr/lib/system/libcompiler_rt.dylib
+0x0000000195097000 	/usr/lib/system/libcopyfile.dylib
+0x00000001881a2000 	/usr/lib/system/libcorecrypto.dylib
+0x0000000188289000 	/usr/lib/system/libdispatch.dylib
+0x0000000188444000 	/usr/lib/system/libdyld.dylib
+0x00000001950b1000 	/usr/lib/system/libkeymgr.dylib
+0x000000019504d000 	/usr/lib/system/libmacho.dylib
+0x000000019452d000 	/usr/lib/system/libquarantine.dylib
+0x00000001950ae000 	/usr/lib/system/libremovefile.dylib
+0x000000018dbc1000 	/usr/lib/system/libsystem_asl.dylib
+0x0000000188137000 	/usr/lib/system/libsystem_blocks.dylib
+0x00000001882d4000 	/usr/lib/system/libsystem_c.dylib
+0x00000001950a5000 	/usr/lib/system/libsystem_collections.dylib
+0x0000000193705000 	/usr/lib/system/libsystem_configuration.dylib
+0x0000000192741000 	/usr/lib/system/libsystem_containermanager.dylib
+0x0000000194ce4000 	/usr/lib/system/libsystem_coreservices.dylib
+0x000000018b862000 	/usr/lib/system/libsystem_darwin.dylib
+0x000000024ffb5000 	/usr/lib/system/libsystem_darwindirectory.dylib
+0x00000001950b2000 	/usr/lib/system/libsystem_dnssd.dylib
+0x000000024ffb9000 	/usr/lib/system/libsystem_eligibility.dylib
+0x00000001882d1000 	/usr/lib/system/libsystem_featureflags.dylib
+0x0000000188472000 	/usr/lib/system/libsystem_info.dylib
+0x0000000195012000 	/usr/lib/system/libsystem_m.dylib
+0x000000018824c000 	/usr/lib/system/libsystem_malloc.dylib
+0x000000018db2e000 	/usr/lib/system/libsystem_networkextension.dylib
+0x000000018bcd8000 	/usr/lib/system/libsystem_notify.dylib
+0x000000019370a000 	/usr/lib/system/libsystem_sandbox.dylib
+0x000000024ffbd000 	/usr/lib/system/libsystem_sanitizers.dylib
+0x00000001950aa000 	/usr/lib/system/libsystem_secinit.dylib
+0x00000001883fc000 	/usr/lib/system/libsystem_kernel.dylib
+0x000000018846a000 	/usr/lib/system/libsystem_platform.dylib
+0x0000000188437000 	/usr/lib/system/libsystem_pthread.dylib
+0x000000018f5b3000 	/usr/lib/system/libsystem_symptoms.dylib
+0x0000000188187000 	/usr/lib/system/libsystem_trace.dylib
+0x0000000195083000 	/usr/lib/system/libunwind.dylib
+0x000000018813c000 	/usr/lib/system/libxpc.dylib
+0x00000001883e0000 	/usr/lib/libc++abi.dylib
+0x000000018805c000 	/usr/lib/libobjc.A.dylib
+0x000000019508f000 	/usr/lib/liboah.dylib
+0x0000000188353000 	/usr/lib/libc++.1.dylib
+0x0000000103444000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_typing.cpython-311-darwin.so
+0x0000000103468000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_json.cpython-311-darwin.so
+0x0000000103454000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/fcntl.cpython-311-darwin.so
+0x000000010347c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_posixsubprocess.cpython-311-darwin.so
+0x00000001034a0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/select.cpython-311-darwin.so
+0x00000001034cc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/math.cpython-311-darwin.so
+0x00000001036bc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/zmq/backend/cython/_zmq.cpython-311-darwin.so
+0x000000010379c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libzmq.5.dylib
+0x000000010383c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libsodium.26.dylib
+0x0000000103890000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libgssapi_krb5.2.2.dylib
+0x00000001039f0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libc++.1.0.dylib
+0x0000000103b00000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libkrb5.3.3.dylib
+0x0000000103500000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libk5crypto.3.1.dylib
+0x000000010348c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libcom_err.3.0.dylib
+0x00000001034e4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libkrb5support.1.1.dylib
+0x000000010401c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libcrypto.3.dylib
+0x0000000199107000 	/System/Library/Frameworks/Kerberos.framework/Versions/A/Kerberos
+0x0000000196b71000 	/System/Library/PrivateFrameworks/Heimdal.framework/Versions/A/Heimdal
+0x000000018b1c8000 	/System/Library/Frameworks/Security.framework/Versions/A/Security
+0x000000018849f000 	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+0x0000000199118000 	/System/Library/Frameworks/GSS.framework/Versions/A/GSS
+0x00000001a05af000 	/System/Library/Frameworks/Kerberos.framework/Versions/A/Libraries/libHeimdalProxy.dylib
+0x0000000190238000 	/usr/lib/libDiagnosticMessagesClient.dylib
+0x0000000190209000 	/System/Library/PrivateFrameworks/CoreAnalytics.framework/Versions/A/CoreAnalytics
+0x0000000194554000 	/usr/lib/libbsm.0.dylib
+0x000000018f5bc000 	/System/Library/Frameworks/Network.framework/Versions/A/Network
+0x00000001895f4000 	/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+0x000000019699c000 	/usr/lib/libheimdal-asn1.dylib
+0x0000000198a20000 	/usr/lib/libresolv.9.dylib
+0x000000018d75a000 	/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork
+0x0000000195219000 	/System/Library/PrivateFrameworks/AppleSauce.framework/Versions/A/AppleSauce
+0x0000000190dea000 	/System/Library/PrivateFrameworks/CoreAutoLayout.framework/Versions/A/CoreAutoLayout
+0x0000000189274000 	/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration
+0x0000000195003000 	/usr/lib/libz.1.dylib
+0x00000001950c3000 	/usr/lib/libfakelink.dylib
+0x0000000195276000 	/usr/lib/libcompression.dylib
+0x000000019031c000 	/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration
+0x0000000195117000 	/usr/lib/libarchive.2.dylib
+0x000000018b59b000 	/usr/lib/libicucore.A.dylib
+0x0000000190e34000 	/usr/lib/libxml2.2.dylib
+0x000000019c757000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
+0x0000000193716000 	/usr/lib/liblangid.dylib
+0x000000018bbf5000 	/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+0x000000019a653000 	/System/Library/Frameworks/Combine.framework/Versions/A/Combine
+0x00000002239f0000 	/System/Library/PrivateFrameworks/CollectionsInternal.framework/Versions/A/CollectionsInternal
+0x0000000239c9f000 	/System/Library/PrivateFrameworks/ReflectionInternal.framework/Versions/A/ReflectionInternal
+0x000000023a231000 	/System/Library/PrivateFrameworks/RuntimeInternal.framework/Versions/A/RuntimeInternal
+0x00000001950c7000 	/System/Library/PrivateFrameworks/SoftLinking.framework/Versions/A/SoftLinking
+0x000000019810f000 	/usr/lib/swift/libswiftCore.dylib
+0x00000001ade39000 	/usr/lib/swift/libswiftCoreFoundation.dylib
+0x00000001ab8a6000 	/usr/lib/swift/libswiftDarwin.dylib
+0x000000019ddc7000 	/usr/lib/swift/libswiftDispatch.dylib
+0x00000001ade84000 	/usr/lib/swift/libswiftIOKit.dylib
+0x00000001a0642000 	/usr/lib/swift/libswiftObjectiveC.dylib
+0x00000001ade4b000 	/usr/lib/swift/libswiftXPC.dylib
+0x000000024fc68000 	/usr/lib/swift/libswift_Concurrency.dylib
+0x000000024fdbc000 	/usr/lib/swift/libswift_StringProcessing.dylib
+0x00000001a0646000 	/usr/lib/swift/libswiftos.dylib
+0x000000018bb73000 	/System/Library/PrivateFrameworks/CoreServicesInternal.framework/Versions/A/CoreServicesInternal
+0x000000018db49000 	/usr/lib/libenergytrace.dylib
+0x0000000195055000 	/usr/lib/system/libkxld.dylib
+0x0000000190dab000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/FSEvents
+0x000000018b86d000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+0x0000000190281000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+0x0000000194cea000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+0x00000001951a0000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+0x000000018f534000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+0x0000000188978000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+0x00000001964c6000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+0x0000000190db8000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList
+0x0000000195240000 	/usr/lib/libapple_nghttp2.dylib
+0x000000018f1a8000 	/usr/lib/libsqlite3.dylib
+0x000000024e675000 	/usr/lib/libCoreEntitlements.dylib
+0x0000000234b91000 	/System/Library/PrivateFrameworks/MessageSecurity.framework/Versions/A/MessageSecurity
+0x000000018f18e000 	/System/Library/PrivateFrameworks/ProtocolBuffer.framework/Versions/A/ProtocolBuffer
+0x000000018db4b000 	/usr/lib/libMobileGestalt.dylib
+0x0000000194c13000 	/System/Library/PrivateFrameworks/AppleFSCompression.framework/Versions/A/AppleFSCompression
+0x000000019453c000 	/usr/lib/libcoretls.dylib
+0x000000019653c000 	/usr/lib/libcoretls_cfhelpers.dylib
+0x0000000195270000 	/usr/lib/libpam.2.dylib
+0x00000001965ae000 	/usr/lib/libxar.1.dylib
+0x000000018d759000 	/usr/lib/libnetwork.dylib
+0x00000001950c8000 	/usr/lib/libpcap.A.dylib
+0x000000018f5a8000 	/usr/lib/libdns_services.dylib
+0x0000000193712000 	/System/Library/PrivateFrameworks/AppleSystemInfo.framework/Versions/A/AppleSystemInfo
+0x000000019423a000 	/System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/Versions/A/IOMobileFramebuffer
+0x000000019276c000 	/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+0x000000019651d000 	/usr/lib/liblzma.5.dylib
+0x000000024fd13000 	/usr/lib/swift/libswift_RegexParser.dylib
+0x0000000194cd7000 	/usr/lib/libbz2.1.0.dylib
+0x0000000194530000 	/usr/lib/libCheckFix.dylib
+0x000000018dbd9000 	/System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC
+0x0000000193718000 	/System/Library/PrivateFrameworks/CoreNLP.framework/Versions/A/CoreNLP
+0x000000019023a000 	/System/Library/PrivateFrameworks/MetadataUtilities.framework/Versions/A/MetadataUtilities
+0x000000019ca1c000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate
+0x0000000194566000 	/usr/lib/libmecab.dylib
+0x0000000189308000 	/usr/lib/libCRFSuite.dylib
+0x00000001945c2000 	/usr/lib/libgermantok.dylib
+0x0000000195217000 	/usr/lib/libThaiTokenizer.dylib
+0x0000000190325000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+0x000000019c72e000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+0x00000001965f5000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+0x0000000194115000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+0x0000000188d7f000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+0x000000019534b000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+0x00000001945c5000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLinearAlgebra.dylib
+0x000000019525b000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparseBLAS.dylib
+0x0000000195346000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libQuadrature.dylib
+0x0000000193841000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBNNS.dylib
+0x000000018920d000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparse.dylib
+0x00000002332e0000 	/System/Library/PrivateFrameworks/MIL.framework/Versions/A/MIL
+0x00000001950fe000 	/usr/lib/libiconv.2.dylib
+0x0000000195049000 	/usr/lib/libcharset.1.dylib
+0x0000000190d8b000 	/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory
+0x0000000190d7b000 	/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory
+0x000000019653e000 	/System/Library/PrivateFrameworks/APFS.framework/Versions/A/APFS
+0x000000019446c000 	/System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation
+0x00000001965bd000 	/usr/lib/libutil.dylib
+0x0000000231433000 	/System/Library/PrivateFrameworks/InstalledContentLibrary.framework/Versions/A/InstalledContentLibrary
+0x000000018bbb4000 	/System/Library/PrivateFrameworks/CoreServicesStore.framework/Versions/A/CoreServicesStore
+0x0000000190de3000 	/usr/lib/libapp_launch_measurement.dylib
+0x0000000221188000 	/System/Library/PrivateFrameworks/AppleMobileFileIntegrity.framework/Versions/A/AppleMobileFileIntegrity
+0x00000001ade07000 	/usr/lib/libmis.dylib
+0x00000001be53f000 	/System/Library/PrivateFrameworks/MobileSystemServices.framework/Versions/A/MobileSystemServices
+0x00000001dc5e5000 	/System/Library/PrivateFrameworks/ConfigProfileHelper.framework/Versions/A/ConfigProfileHelper
+0x000000018a252000 	/System/Library/PrivateFrameworks/LanguageModeling.framework/Versions/A/LanguageModeling
+0x00000001965c1000 	/usr/lib/libxslt.1.dylib
+0x0000000195105000 	/usr/lib/libcmph.dylib
+0x0000000194206000 	/System/Library/PrivateFrameworks/CoreEmoji.framework/Versions/A/CoreEmoji
+0x000000019383b000 	/System/Library/PrivateFrameworks/LinguisticData.framework/Versions/A/LinguisticData
+0x000000018911b000 	/System/Library/PrivateFrameworks/Lexicon.framework/Versions/A/Lexicon
+0x00000001944fa000 	/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement
+0x000000024e863000 	/usr/lib/libTLE.dylib
+0x0000000199172000 	/System/Library/PrivateFrameworks/CommonAuth.framework/Versions/A/CommonAuth
+0x000000010351c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_struct.cpython-311-darwin.so
+0x0000000103724000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_pickle.cpython-311-darwin.so
+0x00000001034b4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_bisect.cpython-311-darwin.so
+0x00000001036fc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_random.cpython-311-darwin.so
+0x000000010374c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_sha512.cpython-311-darwin.so
+0x000000010370c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_heapq.cpython-311-darwin.so
+0x0000000103bcc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_socket.cpython-311-darwin.so
+0x0000000103778000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/array.cpython-311-darwin.so
+0x0000000103c20000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_ssl.cpython-311-darwin.so
+0x0000000103d38000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libssl.3.dylib
+0x0000000103bec000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/binascii.cpython-311-darwin.so
+0x0000000103c54000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libz.1.3.1.dylib
+0x0000000103760000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_opcode.cpython-311-darwin.so
+0x0000000103c00000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_contextvars.cpython-311-darwin.so
+0x0000000103c90000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_asyncio.cpython-311-darwin.so
+0x0000000103c10000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_queue.cpython-311-darwin.so
+0x0000000103cac000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_hashlib.cpython-311-darwin.so
+0x0000000103cc0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_blake2.cpython-311-darwin.so
+0x0000000103cf8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_datetime.cpython-311-darwin.so
+0x0000000103cd4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/zlib.cpython-311-darwin.so
+0x0000000103c74000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/tornado/speedups.abi3.so
+0x0000000104698000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_curses.cpython-311-darwin.so
+0x00000001046fc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libncursesw.6.dylib
+0x0000000104738000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libtinfow.6.dylib
+0x00000001048c4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_decimal.cpython-311-darwin.so
+0x0000000103ce8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/termios.cpython-311-darwin.so
+0x0000000103d1c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_bz2.cpython-311-darwin.so
+0x00000001046c0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libbz2.1.0.8.dylib
+0x0000000104684000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_lzma.cpython-311-darwin.so
+0x0000000104914000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/liblzma.5.dylib
+0x0000000104670000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_uuid.cpython-311-darwin.so
+0x0000000104874000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_csv.cpython-311-darwin.so
+0x0000000104f44000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_sqlite3.cpython-311-darwin.so
+0x0000000105288000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libsqlite3.0.dylib
+0x0000000104888000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/pyexpat.cpython-311-darwin.so
+0x0000000104f98000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libexpat.1.10.0.dylib
+0x0000000105a20000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/unicodedata.cpython-311-darwin.so
+0x00000001046dc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_scproxy.cpython-311-darwin.so
+0x00000001046ec000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_lsprof.cpython-311-darwin.so
+0x00000001048a4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/resource.cpython-311-darwin.so
+0x0000000104f7c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/psutil/_psutil_osx.abi3.so
+0x00000001048b4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/psutil/_psutil_posix.abi3.so
+0x0000000105200000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_ctypes.cpython-311-darwin.so
+0x0000000105224000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libffi.8.dylib
+0x0000000105c40000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-311-darwin.so
+0x0000000130000000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/_orekit.cpython-311-darwin.so
+0x0000000115000000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/jre/lib/server/libjvm.dylib
+0x0000000107614000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so
+0x0000000120c74000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libopenblas.0.dylib
+0x0000000117100000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libgfortran.5.dylib
+0x0000000107300000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libomp.dylib
+0x0000000105764000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libquadmath.0.dylib
+0x0000000105248000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libgcc_s.1.1.dylib
+0x0000000105710000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/linalg/_umath_linalg.cpython-311-darwin.so
+0x0000000104fe0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/jre/lib/libverify.dylib
+0x0000000107a98000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/jre/lib/libjava.dylib
+0x0000000105738000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/jre/lib/libzip.dylib
+0x00000001075d0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/jre/lib/libnio.dylib
+0x0000000107a4c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/jre/lib/libnet.dylib
+0x0000000137e00000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/_brotli.cpython-311-darwin.so
+0x0000000105cc8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/zstandard/backend_c.cpython-311-darwin.so
+0x0000000137ecc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libzstd.1.5.6.dylib
+0x0000000105ce8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_multibytecodec.cpython-311-darwin.so
+0x00000001980b1000 	/usr/lib/libusrtcp.dylib
+0x000000018d690000 	/usr/lib/libboringssl.dylib
+0x0000000115d70000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/bit_generator.cpython-311-darwin.so
+0x000000011748c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_common.cpython-311-darwin.so
+0x0000000147904000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/mtrand.cpython-311-darwin.so
+0x0000000120c00000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_bounded_integers.cpython-311-darwin.so
+0x0000000115d38000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_mt19937.cpython-311-darwin.so
+0x00000001075f4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_philox.cpython-311-darwin.so
+0x0000000115da8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_pcg64.cpython-311-darwin.so
+0x0000000107a78000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_sfc64.cpython-311-darwin.so
+0x0000000147cd4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/numpy/random/_generator.cpython-311-darwin.so
+0x0000000107fcc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/pandas_parser.cpython-311-darwin.so
+0x0000000107fe0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/pandas_datetime.cpython-311-darwin.so
+0x0000000147ecc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/interval.cpython-311-darwin.so
+0x00000001541d0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/hashtable.cpython-311-darwin.so
+0x0000000120aac000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/missing.cpython-311-darwin.so
+0x0000000135d30000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/dtypes.cpython-311-darwin.so
+0x0000000115dcc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/ccalendar.cpython-311-darwin.so
+0x0000000135d68000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/np_datetime.cpython-311-darwin.so
+0x0000000137f9c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/conversion.cpython-311-darwin.so
+0x0000000115de8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/base.cpython-311-darwin.so
+0x00000001543a8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/offsets.cpython-311-darwin.so
+0x0000000154000000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/timestamps.cpython-311-darwin.so
+0x00000001479b8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/nattype.cpython-311-darwin.so
+0x0000000154094000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/timedeltas.cpython-311-darwin.so
+0x0000000147c00000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/timezones.cpython-311-darwin.so
+0x0000000115d5c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/_zoneinfo.cpython-311-darwin.so
+0x0000000147c40000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/fields.cpython-311-darwin.so
+0x0000000147c8c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/tzconversion.cpython-311-darwin.so
+0x00000001174c8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/properties.cpython-311-darwin.so
+0x0000000154120000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/parsing.cpython-311-darwin.so
+0x00000001544a8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/strptime.cpython-311-darwin.so
+0x0000000154500000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/period.cpython-311-darwin.so
+0x0000000135dc8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslibs/vectorized.cpython-311-darwin.so
+0x00000001174e4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/ops_dispatch.cpython-311-darwin.so
+0x0000000154714000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/algos.cpython-311-darwin.so
+0x0000000154974000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/lib.cpython-311-darwin.so
+0x0000000154670000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/ops.cpython-311-darwin.so
+0x0000000154180000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/hashing.cpython-311-darwin.so
+0x00000001546ac000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/arrays.cpython-311-darwin.so
+0x0000000154908000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/tslib.cpython-311-darwin.so
+0x0000000154de4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/sparse.cpython-311-darwin.so
+0x0000000154d80000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/internals.cpython-311-darwin.so
+0x0000000120ae4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/indexing.cpython-311-darwin.so
+0x00000001551d0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/index.cpython-311-darwin.so
+0x00000001546d0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/writers.cpython-311-darwin.so
+0x00000001554ac000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/join.cpython-311-darwin.so
+0x0000000105a00000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/mmap.cpython-311-darwin.so
+0x0000000105a10000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/grp.cpython-311-darwin.so
+0x0000000155100000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/window/aggregations.cpython-311-darwin.so
+0x00000001548c0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/window/indexers.cpython-311-darwin.so
+0x0000000154fa4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/reshape.cpython-311-darwin.so
+0x000000015599c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/groupby.cpython-311-darwin.so
+0x0000000135d90000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/json.cpython-311-darwin.so
+0x0000000155b80000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/parsers.cpython-311-darwin.so
+0x0000000154d28000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/pandas/_libs/testing.cpython-311-darwin.so
+0x0000000135da8000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/lib-dynload/cmath.cpython-311-darwin.so
+0x000000015515c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/matplotlib/_c_internal_utils.cpython-311-darwin.so
+0x0000000155928000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/PIL/_imaging.cpython-311-darwin.so
+0x0000000156890000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libtiff.6.dylib
+0x00000001569bc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libjpeg.8.3.2.dylib
+0x0000000156800000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libopenjp2.2.5.2.dylib
+0x0000000155184000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libxcb.1.dylib
+0x0000000156a58000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libwebp.7.1.9.dylib
+0x0000000156ad4000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libLerc.4.dylib
+0x0000000137fe0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libdeflate.0.dylib
+0x0000000147eac000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libsharpyuv.0.1.0.dylib
+0x0000000120c58000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libXau.6.0.0.dylib
+0x0000000147ff0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libXdmcp.6.dylib
+0x0000000156920000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/matplotlib/_path.cpython-311-darwin.so
+0x0000000154d4c000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/matplotlib/ft2font.cpython-311-darwin.so
+0x00000001573bc000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libfreetype.6.dylib
+0x0000000156978000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/libpng16.16.dylib
+0x00000001558f0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/kiwisolver/_cext.cpython-311-darwin.so
+0x0000000157300000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/matplotlib/_image.cpython-311-darwin.so
+0x0000000156c68000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/matplotlib/backends/_backend_agg.cpython-311-darwin.so
+0x00000001541b0000 	/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/PIL/_imagingmath.cpython-311-darwin.so
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): /Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/orekit-12.2.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/orekit-12.2-python-wrapper.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-core-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-fitting-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-filtering-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-geometry-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-ode-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-optim-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/hipparchus-stat-3.1.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/rugged-4.0-20240603.065802-2.jar:/Users/charlesc/anaconda3/envs/orekit_tutorials_env/lib/python3.11/site-packages/orekit/rugged-4.0-python-wrapper.jar
+Launcher Type: generic
+
+Environment Variables:
+JAVA_HOME=/Users/charlesc/anaconda3/envs/orekit_tutorials_env
+PATH=/Users/charlesc/anaconda3/envs/orekit_tutorials_env/bin:/Users/charlesc/anaconda3/condabin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/charlesc/.rvm/bin
+SHELL=/bin/zsh
+
+Signal Handlers:
+SIGSEGV: [libjvm.dylib+0x565ff4], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.dylib+0x565ff4], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.dylib+0x45e87c], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.dylib+0x45e87c], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.dylib+0x45e87c], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.dylib+0x45e87c], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.dylib+0x45f1a0], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.dylib+0x45d128], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [python3.11+0x200548], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_ONSTACK
+SIGTERM: [libjvm.dylib+0x45d128], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.dylib+0x45d128], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Bsduname:Darwin 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6000 arm64
+rlimit: STACK 8176k, CORE 0k, NPROC 5333, NOFILE 10240, AS infinity
+load average:4.27 4.65 4.92
+
+CPU:total 10 (initial active 10) 0x61:0x0:0x1b588bb3:0, simd, crc, lse
+
+Memory: 16k page, physical 33554432k(1727056k free)
+
+/proc/meminfo:
+
+
+vm_info: OpenJDK 64-Bit Server VM (25.412-b08) for bsd-aarch64 JRE (Zulu 8.78.0.19-CA-macos-aarch64) (1.8.0_412-b08), built on Mar 28 2024 03:46:06 by "zulu_re" with gcc Apple LLVM 12.0.0 (clang-1200.0.32.28)
+
+time: Tue Dec  3 14:56:47 2024
+timezone: GMT
+elapsed time: 1263.446364 seconds (0d 0h 21m 3s)
+
